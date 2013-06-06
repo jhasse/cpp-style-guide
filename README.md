@@ -3,7 +3,7 @@
 A style guide for C++, still work in progress. I found several
 [other](https://github.com/bbatsov/ruby-style-guide)
 [style](https://github.com/polarmobile/coffeescript-style-guide)
-[guides](https://github.com/bbatsov/clojure-style-guide) on Github, but not one for C++. So I've created this one as a
+[guides](https://github.com/bbatsov/clojure-style-guide) on Github, but not one for C++. So I've created this as a
 starting point. Feel free to create an issue or a pull request.
 
 ## Source Code Layout
@@ -19,15 +19,14 @@ starting point. Feel free to create an issue or a pull request.
 
 ## Naming
 
-CamelCase for Types, camelCase for names.
+CamelCase for types, camelCase for names.
 
 ```cpp
 class Example {
 public:
-	void fooBar(int firstVar
-	            int secondVar) {
-	for (int i = 0; i < 10; ++i) {
-		std::cout << i << std::endl;
+	void fooBar(int firstVar, int secondVar) {
+		for (int i = 0; i < 10; ++i) {
+			std::cout << i << std::endl;
 		}
 	}
 };
