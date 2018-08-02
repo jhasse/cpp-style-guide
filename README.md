@@ -32,9 +32,7 @@ public:
 };
 ```
 
-## Includes
-
-Local includes before system ones:
+## Local includes before system ones
 
 ```cpp
 #include "thisfile.hpp"
@@ -44,3 +42,17 @@ Local includes before system ones:
 
 #include <iostream>
 ```
+
+## Only use `/* */` within one line
+
+To comment multiple lines prepend them with `//`.
+
+```cpp
+void foo(int /*unused*/) {
+	// 1
+	// 2
+	// 3
+}
+```
+
+The reason for this is that many line-based tools (e.g. merging with Git or `git blame`) won't know that a `/*` also affects the following lines.
